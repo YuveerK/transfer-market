@@ -17,7 +17,9 @@ const ViewTeam = () => {
   // Non State
   const navigate = useNavigate();
   // Functions
-  const viewPlayer = (playerLink) => {};
+  const viewPlayer = (playerLink) => {
+    navigate("/view-player", { state: playerLink });
+  };
 
   const searchSeason = async () => {
     setLoading(true);
